@@ -6,10 +6,10 @@ export default async function Home() {
   const resources = await getResources();
 
   return (
-    <div className="max-w-[75rem] mx-auto ">
+    <div className="max-w-[75rem] mx-auto px-8  ">
       <Header />
       <section>
-        <p className="text-4xl font-bold text-gray-800">
+        <p className="text-2xl md:text-4xl font-bold text-gray-800">
           Base is an Ethereum Layer 2 (L2) chain that offers a safe, low-cost,
           developer-friendly way to build on-chain. Base is an L2 built on OP
           Stack
