@@ -4,7 +4,9 @@ const getResources = async () => {
   const github_url =
     "https://raw.githubusercontent.com/suhailkakar/awesome-base-info/main/README.md";
 
-  const html = await fetch(github_url)
+  const html = await fetch(github_url, {
+    cache: "no-cache",
+  })
     .then((response) => response.text())
     .then((text) => marked(text));
 
